@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Present</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header-navbar">
+        <ul class="menu-items">
+          <li>MENU ITEM</li>
+          <li>MENU ITEM</li>
+          <li>MENU ITEM</li>
+        </ul>
+        <h1>LOGO</h1>
+        <div class="menu-buttons">
+          <button class="login">LOGIN</button>
+          <button class="register">REGISTER</button>
+        </div>
+      </div>
+
+      <div class="header-container">
+        <div class="title-container">
+          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+          <span>Lorem ipsum dolor sit amet</span>
+        </div>
+        <div class="social-media-container">
+          <img src="assets/icons/facebook.svg" alt="fb">
+          <img src="assets/icons/instagram.svg" alt="ig">
+          <img src="assets/icons/youtube.svg" alt="yt">
+        </div>
+      </div>
+
+      <div class="search-container">
+        <div class="search-wrapper">
+          <div class="search-input-container">
+            <p>LOREM IPSUM</p>
+            <div class="search">
+              <img src="assets/icons/search.svg" alt="search">
+              <input type="text" placeholder="Search here...">
+            </div>
+          </div>
+          <div class="filter-input-container">
+            <p>LOREM IPSUM</p>
+            <select name="category">
+              <option value="Category">Category...</option>
+              <option value="Category">Lorem Ipsum</option>
+              <option value="Category">Lorem Ipsum</option>
+            </select>
+          </div>
+          <div class="search-button-container">
+            <button>Search</button>
+          </div>
+        </div>
+        <div class="social-media-container">
+          <img src="assets/icons/mouse.svg" alt="scroll">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/img/card-image.png" alt="card">
+      </div>
+      <div class="card-body">
+        <div class="card-title-container">
+          <p class="card-title">Name Here</p>
+          <img src="assets/img/favourite.png" alt="">
+        </div>
+        <div class="card-location">
+          <img src="assets/icons/location.svg" alt="">
+          <p>Location</p>
+        </div>
+        <ul class="card-tags">
+          <li class="card-tag">tag 1</li>
+          <li class="card-tag">tag</li>
+          <li class="card-tag">tag 1</li>
+        </ul>
+        <button class="card-action">Button Link</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/img/card-image.png" alt="card">
+      </div>
+      <div class="card-body">
+        <div class="card-title-container">
+          <p class="card-title">Name Here</p>
+          <img src="assets/img/favourite.png" alt="">
+        </div>
+        <div class="card-location">
+          <img src="assets/icons/location.svg" alt="">
+          <p>Location</p>
+        </div>
+        <ul class="card-tags">
+          <li class="card-tag">tag 1</li>
+          <li class="card-tag">tag</li>
+          <li class="card-tag">tag 1</li>
+        </ul>
+        <button class="card-action">Button Link</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/img/card-image.png" alt="card">
+      </div>
+      <div class="card-body">
+        <div class="card-title-container">
+          <p class="card-title">Name Here</p>
+          <img src="assets/img/favourite.png" alt="">
+        </div>
+        <div class="card-location">
+          <img src="assets/icons/location.svg" alt="">
+          <p>Location</p>
+        </div>
+        <ul class="card-tags">
+          <li class="card-tag">tag 1</li>
+          <li class="card-tag">tag</li>
+          <li class="card-tag">tag 1</li>
+        </ul>
+        <button class="card-action">Button Link</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var tags = document.getElementsByClassName('card-tag');
+    var colors = ['#B1BDFA', '#B1E4FA', '#B2FAE5'];
+    for (let i = 0; i < tags.length; i++) {
+      var random_color = colors[Math.floor(Math.random() * colors.length)];
+      tags[i].style.backgroundColor = random_color;
+    }
+  </script>
+</body>
+
+</html>
